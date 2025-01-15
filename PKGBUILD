@@ -3,14 +3,14 @@
 pkgbase='mkimg-th1520'
 pkgname='th1520-firmware'
 pkgdesc='TH1520 firmware'
-pkgver=20240602
+pkgver=20240720
 pkgrel=1
 url='https://github.com/revyos/mkimg-th1520'
 arch=(riscv64)
 license=('proprietary')
 options=('!strip')
 source=("https://github.com/revyos/${pkgbase}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('75ea38cc58cd5b1e25f3c93ea9f7111e2b0ac69ef8e5f16419cbd88aa2e94143')
+sha256sums=('f2983044d141a45f12b842e18d92c7211352479a8e65674de7a61e442f9b02c3')
 
 package() {
   cd "$srcdir/$pkgbase-$pkgver/addons/lib/firmware"
